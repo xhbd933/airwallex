@@ -1,0 +1,14 @@
+$prefix:"footer";
+
+.#{$prefix}{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    color: #fff;
+    background-color: rgb(250, 202, 140);
+}
