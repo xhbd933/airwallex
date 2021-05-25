@@ -5,6 +5,7 @@
 ##### 3.切换到master分支 git checkout master
 ##### 4.安装依赖 npm install(首次推荐先删掉package-lock.json再进行npm install)
 ##### 5.启动项目 npm  run serve
+##### 6.浏览器中输入localhost:8080
 
 ### 项目技术栈
 项目主要使用typescript语言、react框架以及一些开源的库进行开发，使用webpack构建工具进行打包，使用eslint+tslint做了简单的代码规范
