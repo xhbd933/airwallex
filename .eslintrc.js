@@ -1,22 +1,19 @@
 module.exports = {
-    // 指定脚本的运行环境，一个环境定义了一组预定义的全局变量
     "env": {
-        "browser": true, //浏览器环境中的全局变量
-        "es6": true, //启用除了modules以外的所有ES6特性（该选项会自动设置 ecmaVersion 解析器选项为 6）
-        "node": true //Node.js 全局变量和 Node.js 作用域
+        "browser": true, 
+        "es6": true, 
+        "node": true 
     },
     "extends": [
-        "eslint:recommended", //所有在规则页面被标记为“✔️”的规则将会默认开启
+        "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
-    // 设置全局变量
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
     "parser":  "@typescript-eslint/parser",
-    // 第三方插件
     "plugins": [
         "@typescript-eslint"
     ],
@@ -36,7 +33,6 @@ module.exports = {
                 "varsIgnorePattern": "createElement"
             }
         ],
-        "no-trailing-spaces": [1, { "skipBlankLines": true }],
         "no-unreachable": 1,
         "no-alert": 2,
         "no-mixed-spaces-and-tabs": 1,
