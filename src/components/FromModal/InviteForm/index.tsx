@@ -32,7 +32,8 @@ const InviteForm: React.FC<IProps>= React.memo(({onSuccessCallback})=> {
 
   const confirmEmailValidate = (form: FormInstance) =>{
     return  ({
-      validator(_: any, value: any) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      validator(_: any, value: string) {
         if (form.getFieldValue('email') !== value) {
           
           return Promise.reject(new Error('the email address should be the same twice'));
