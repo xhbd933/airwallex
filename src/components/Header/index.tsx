@@ -1,15 +1,18 @@
 import React from "react";
+import "./index.scss";
 
-const PREFIX = "footer";
+const PREFIX = "header";
 
 interface IProps{
-  title:React.ReactNode;
+  title?:React.ReactNode;
 }
 const Header: React.FC<IProps>= React.memo(({title})=> {
 
   return (
     <div className={PREFIX}>
-        {title}
+        {title?title:
+        <div className={`${PREFIX}-defaultTitle`}>Broccoli & Co.</div>
+        }
     </div>
   );
 })

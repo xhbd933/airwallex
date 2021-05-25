@@ -42,7 +42,21 @@ module.exports = {
         loader: "eslint-loader",
         include: /src/
       },
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      {
+        test: /\.(bmp|png|jpg|jpeg|ico|gif)$/,
+        use: [
+            {
+                loader: 'url-loader',
+                options:{
+                    limit: 1024 * 10,
+                    outputPath: 'images', 
+                    publicPath: '../../images',
+                    name: '[name].[ext]'
+                }
+            }
+        ]
+      }
     ]
   },
   resolve: {

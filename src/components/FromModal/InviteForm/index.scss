@@ -1,0 +1,19 @@
+$prefix:"inviteForm";
+
+.#{$prefix}{
+    &-errorMassage{
+        text-align: center;
+        color: red;
+    }
+    &-button.ant-btn{
+        width: 100%;
+        background-color: rgb(233, 165, 75);
+        color: #fff;
+        border: 1px solid rgb(233, 165, 75);
+        &:hover,&:visited,&:focus{
+            background-color: rgb(245, 205, 153);
+            color: #fff;
+            border: 1px solid rgb(240, 188, 120);
+        }
+    }
+}
