@@ -13,10 +13,9 @@ interface IProps{
 }
 const FromModal: React.FC<IProps>= React.memo(({visible,handleOk})=> {
 
-  const [success,setSuccess]=useState<boolean>(false)
+  const [success,setSuccess]=useState<boolean>(false);
   const handleSuccess=()=>{
     handleOk()
-    setSuccess(false);
   }
 
   return (

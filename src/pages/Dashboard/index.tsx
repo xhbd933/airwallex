@@ -36,11 +36,15 @@ const Dashbord: React.FC<IProps>= React.memo(()=> {
                all that you see is good,all you do is not young
           </div>
         </div>
-        <FromModal
-          visible={modalVisiable}
-          // onCancel={onCancel}
-          handleOk={handleOk}
-        />
+        {
+          modalVisiable&&
+          <FromModal
+            visible={modalVisiable}
+            // onCancel={onCancel}
+            handleOk={handleOk}
+         />
+        }
+        
         <Footer />
     </div>
   );
