@@ -33,7 +33,6 @@ const FromModal: React.FC<IProps>= React.memo(({visible,handleOk})=> {
        backgroundColor:"rgb(248, 185, 101)",
        padding:16
      }}
-     width={success?354:300}
     >
       <div className={`${PREFIX}-title`}>
         <div className={`${PREFIX}-titleText`}>{success?"All done":"Request an invite"}</div>
